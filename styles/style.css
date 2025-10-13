@@ -13,42 +13,61 @@ body {
 
 .card__standart {
   display: flex;
-  flex-grow: 1;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-
 }
 
-.card__image {
+@media (min-width: 840px) {
+  .card__image {
+  flex-grow: 1;
   background-image: url(../images/imac.jpg);
   background-size: cover;
   height: 100vh;
   background-position: center;
+  }
 }
 
 .card_form {
-  background-color: darkgrey;
+  flex-grow: 1;
+  background-image: linear-gradient(to right, rgb(187, 187, 187) , rgb(60, 64, 66))
 }
 
 .form {
+  box-sizing: border-box;
   font-size: 18px;
+  background-image: linear-gradient(to left, rgb(196, 203, 204) , rgb(138, 153, 156));
+  border-radius: 5%;
   position: absolute;
   display: flex;
+  margin: auto;
   align-items: center;
-  height: 300px;
+  justify-content: center;
+  width: 400px;
+  height: 350px;
+  box-shadow: 5px 5px 5px grey;
 }
 
 .form-field {
   display: block;
-  height: 40px;
+
   padding: 5px;
-  text-align: center;
+  text-align: left;
   max-width: 400px;
 }
 
+.input__field {
+  box-sizing: border-box;
+  border: 1px white;
+  border-radius: 20px;
+  width: 360px;
+  height: 40px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
 .text__line {
-  line-height: 40px;
+  line-height: 25px;
 }
 
 .link_style {
@@ -58,14 +77,34 @@ body {
 .click {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  width: 360px;
   position: relative;
   margin: auto;
   margin-bottom: 10px;
-  border-radius: 10%;
+  border-radius: 20px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(160, 185, 206) , rgb(130, 136, 145));
+  border: 1px white;
+}
+
+input:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px rgb(61, 67, 77);
+}
+
+.link_style:hover {
+  color: rgb(255, 255, 255);
+}
+
+.text__line:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 button:hover {
-  color: gray;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px rgb(61, 67, 77);
 }
 
 button:active {

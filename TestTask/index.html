@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>TestForm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="./styles/style.css"
+    />
+  </head>
+  <body>
+    <div class="card">
+
+      <div class="card__standart card__image">
+      </div>
+
+      <div class="card__standart card_form">
+        <div class="form">
+          <form action="http://localhost:3000/api" method="post">
+
+            <div class="form-field">
+              Email: <br>
+              <input type="email" name="email">
+            </div>
+
+            <div class="form-field">
+              Password: <br>
+              <input type="text" name="password">
+            </div>
+
+            <div class="form-field text__line">
+              <a class="link_style" href="URL">Forgot password?</a>
+            </div>
+
+            <label class="form-field text__line">
+              <input type="checkbox" name="accepted" value="yes">
+              Remember me
+            </label>
+
+            <button class="form-field click">Sign In</button>
+
+            <button class="form-field click">Register</button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
